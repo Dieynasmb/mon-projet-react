@@ -1,0 +1,438 @@
+/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f9f4; /* vert clair santé */
+  color: #2e3d49;
+}
+
+h1, h2, h3 {
+  color: #28a745; /* vert médical */
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(40, 167, 69, 0.1);
+  border-left: 6px solid #28a745;
+  margin-top: 40px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9fdf9;
+  font-size: 16px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+
+.navbar {
+  background-color: #28a745;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar {
+  background-color: #28a745;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #e6f4ea;
+}
+/* --- Styles généraux pour toute l'app --- */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f9f9;  /* bleu très clair / blanchâtre */
+  margin: 0;
+  padding: 0;
+  color: #2d3a4a;
+}
+
+/* Conteneur centré pour les pages */
+.container {
+  max-width: 450px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 102, 153, 0.2);
+}
+
+/* Titres */
+h2 {
+  color: #007b8f; /* bleu santé */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formulaire */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #00677f;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 2px solid #b5d3db;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+  border-color: #00a99d; /* vert doux */
+  outline: none;
+  box-shadow: 0 0 5px #00a99d88;
+}
+
+/* Boutons */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007b8f; /* bleu santé */
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f66;
+}
+
+/* --- Navbar --- */
+nav {
+  background-color: #007b8f; /* bleu santé */
+  padding: 15px 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+nav ul li {
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #005f66;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    margin: 30px 15px;
+    padding: 25px 20px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+footer {
+  background-color: #004d40; /* vert foncé santé */
+  color: #e0f2f1; /* vert très clair */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.homepage {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero {
+  background-color: #e0f2f1;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.highlight {
+  color: #0d9488;
+  font-weight: bold;
+}
+
+.slogan {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #555;
+}
+
+.services {
+  margin-top: 2rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.service {
+  background-color: #f0fdf4;
+  border: 1px solid #0d9488;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 180px;
+}
+
+.partenaires .logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.partenaires img {
+  height: 60px;
+}
+
+.prevention {
+  margin-top: 2rem;
+}
+
+.sante-img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #0d9488;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+.homepage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fdfd;
+  color: #05445E;
+  padding-bottom: 60px;
+}
+
+/* En-tête principal */
+.hero {
+  background: linear-gradient(to right, #D4F1F4, #75E6DA);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.brand {
+  color: #189AB4;
+}
+
+.slogan {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #05445E;
+}
+
+/* Section partenaires */
+.partners {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.partner-logos img {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.partner-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Section fonctionnalités */
+.features {
+  margin-top: 70px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.feature-item {
+  background-color: #D4F1F4;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  background-color: #75E6DA;
+}
+
+.feature-item h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #05445E;
+}
+
+.feature-item p {
+  color: #333;
+  font-size: 0.95rem;
+}
+/* === DASHBOARD PATIENT === */
+.dashboard {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f0fdfa;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard h1 {
+  text-align: center;
+  color: #0d9488;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-section {
+  margin-bottom: 2rem;
+}
+
+.dashboard-section h2 {
+  color: #0f766e;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #0d9488;
+  padding-bottom: 0.3rem;
+}
+
+.dashboard-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-section li {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-left: 5px solid #0d9488;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
